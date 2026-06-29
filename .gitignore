@@ -22,7 +22,7 @@ data/gold/
 *.xlsx
 
 # Models
-models/
+/models/
 *.pkl
 *.joblib
 *.pt
