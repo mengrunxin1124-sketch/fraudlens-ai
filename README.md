@@ -144,6 +144,6 @@ fraudlens-ai/
 
 ## Current Status
 
-This project is currently in the initial design and planning stage.
+Completed the first reproducible PaySim pipeline, including data validation, temporal split, feature engineering, baseline model training and evaluation.
 
-The first milestone is to build a clean baseline pipeline using PaySim data, including data preprocessing, model training, evaluation and SHAP explanation.
+The first diagnostic baseline achieved very high performance, but the results also reveal potential feature leakage from post-transaction balance fields and rule-derived variables. The next milestone is to build a stricter real-time baseline using only features that would be available before or during transaction review.

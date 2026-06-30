@@ -1,0 +1,162 @@
+{
+  "models": {
+    "strict_logistic_regression": {
+      "validation": {
+        "dataset": "validation",
+        "rows": 954393,
+        "fraud_count": 564,
+        "fraud_rate": 0.000590951526258051,
+        "pr_auc": 0.12564095495617814,
+        "roc_auc": 0.9832091485330915,
+        "threshold_0_5": {
+          "precision": 0.007721309003166943,
+          "recall": 0.9078014184397163,
+          "f1": 0.015312378502856118,
+          "tn": 888031,
+          "fp": 65798,
+          "fn": 52,
+          "tp": 512
+        },
+        "top_k": {
+          "100": {
+            "k": 100,
+            "fraud_found": 48,
+            "precision_at_k": 0.48,
+            "recall_at_k": 0.0851063829787234
+          },
+          "500": {
+            "k": 500,
+            "fraud_found": 121,
+            "precision_at_k": 0.242,
+            "recall_at_k": 0.21453900709219859
+          },
+          "1000": {
+            "k": 1000,
+            "fraud_found": 135,
+            "precision_at_k": 0.135,
+            "recall_at_k": 0.2393617021276596
+          }
+        }
+      },
+      "test": {
+        "dataset": "test",
+        "rows": 954393,
+        "fraud_count": 4010,
+        "fraud_rate": 0.004201623440238979,
+        "pr_auc": 0.3674868492010792,
+        "roc_auc": 0.9743682139561515,
+        "threshold_0_5": {
+          "precision": 0.05504080106635456,
+          "recall": 0.8443890274314214,
+          "f1": 0.10334513490416311,
+          "tn": 892251,
+          "fp": 58132,
+          "fn": 624,
+          "tp": 3386
+        },
+        "top_k": {
+          "100": {
+            "k": 100,
+            "fraud_found": 100,
+            "precision_at_k": 1.0,
+            "recall_at_k": 0.02493765586034913
+          },
+          "500": {
+            "k": 500,
+            "fraud_found": 425,
+            "precision_at_k": 0.85,
+            "recall_at_k": 0.1059850374064838
+          },
+          "1000": {
+            "k": 1000,
+            "fraud_found": 796,
+            "precision_at_k": 0.796,
+            "recall_at_k": 0.19850374064837906
+          }
+        }
+      }
+    },
+    "strict_hist_gradient_boosting": {
+      "validation": {
+        "dataset": "validation",
+        "rows": 954393,
+        "fraud_count": 564,
+        "fraud_rate": 0.000590951526258051,
+        "pr_auc": 0.9968614367648876,
+        "roc_auc": 0.9999981532068928,
+        "threshold_0_5": {
+          "precision": 0.9141004862236629,
+          "recall": 1.0,
+          "f1": 0.9551227773073666,
+          "tn": 953776,
+          "fp": 53,
+          "fn": 0,
+          "tp": 564
+        },
+        "top_k": {
+          "100": {
+            "k": 100,
+            "fraud_found": 100,
+            "precision_at_k": 1.0,
+            "recall_at_k": 0.1773049645390071
+          },
+          "500": {
+            "k": 500,
+            "fraud_found": 499,
+            "precision_at_k": 0.998,
+            "recall_at_k": 0.8847517730496454
+          },
+          "1000": {
+            "k": 1000,
+            "fraud_found": 564,
+            "precision_at_k": 0.564,
+            "recall_at_k": 1.0
+          }
+        }
+      },
+      "test": {
+        "dataset": "test",
+        "rows": 954393,
+        "fraud_count": 4010,
+        "fraud_rate": 0.004201623440238979,
+        "pr_auc": 0.9994095532575683,
+        "roc_auc": 0.9999975299366315,
+        "threshold_0_5": {
+          "precision": 0.9830633284241531,
+          "recall": 0.9987531172069826,
+          "f1": 0.9908461157842652,
+          "tn": 950314,
+          "fp": 69,
+          "fn": 5,
+          "tp": 4005
+        },
+        "top_k": {
+          "100": {
+            "k": 100,
+            "fraud_found": 100,
+            "precision_at_k": 1.0,
+            "recall_at_k": 0.02493765586034913
+          },
+          "500": {
+            "k": 500,
+            "fraud_found": 500,
+            "precision_at_k": 1.0,
+            "recall_at_k": 0.12468827930174564
+          },
+          "1000": {
+            "k": 1000,
+            "fraud_found": 1000,
+            "precision_at_k": 1.0,
+            "recall_at_k": 0.24937655860349128
+          }
+        }
+      }
+    }
+  },
+  "metadata": {
+    "target_column": "isFraud",
+    "random_state": 42,
+    "training_rows": 185589,
+    "training_fraud_count": 3639
+  }
+}
