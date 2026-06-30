@@ -1,9 +1,7 @@
 pandas
-numpy
 scikit-learn
 xgboost
 lightgbm
-shap
 matplotlib
 seaborn
 fastapi
@@ -14,3 +12,5 @@ pytest
 jupyter
 ipykernel
 python-dotenv
+numpy==1.26.4
+shap==0.46.0

@@ -46,3 +46,6 @@ aws_credentials
 # Logs
 logs/
 *.log
+
+# Keep small generated report CSVs
+!reports/*.csv
